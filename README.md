@@ -1,4 +1,4 @@
-[license-url]: LICENSE.md
+[license-url]: LICENSE
 [license-image]: https://img.shields.io/github/license/adonisjs/adonis-framework?style=for-the-badge
 
 [![license-image]][license-url]
