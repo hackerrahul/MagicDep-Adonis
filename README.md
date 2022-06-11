@@ -33,7 +33,15 @@ before that switch to sudo environment by running this command,
 sudo su
 ```
 
-So lets install script, just run this command.
+So lets install script, just run any one of this command.
+### wget
+
+```bash
+wget -q https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh -O magic.sh; sudo bash ./magic.sh
+```
+
+## or
+### curl
 ```bash
 wget -q https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh -O magic.sh; sudo bash ./magic.sh
 ```
