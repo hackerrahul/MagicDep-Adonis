@@ -1,9 +1,10 @@
 [license-url]: LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
 
-[![license-image]][license-url]
+[author]: https://twitter.com/GangotriRahul
+[author-image]: https://img.shields.io/badge/Author-HackerRahul-brightgreen
 
-[![Author](http://img.shields.io/badge/author-@titouangalopin-blue.svg?style=flat-square)](https://twitter.com/GangotriRahul)
+[![license-image]][license-url] [![author-image]][author]
 
 
 
