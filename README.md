@@ -19,6 +19,8 @@ After all of this things, we need to build our project, run migration, setup env
 
 ##### So to cut all that crap, I have developed a shell script that will do everything for you (From Install NodeJS, NPM, PM2, migrations installing dependencies, everything.)
 
+# Installation
+
 #### You just need a git pre installed on your server.
 
 ```bash
