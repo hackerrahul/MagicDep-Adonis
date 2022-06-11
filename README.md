@@ -3,6 +3,8 @@
 
 [![license-image]][license-url]
 
+[![Author](http://img.shields.io/badge/author-@titouangalopin-blue.svg?style=flat-square)](https://twitter.com/GangotriRahul)
+
 
 
 
