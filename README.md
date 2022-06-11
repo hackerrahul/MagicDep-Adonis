@@ -37,13 +37,13 @@ So lets install script, just run any one of this command.
 ### wget
 
 ```bash
-wget -q https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh -o magic.sh; ./magic.sh
+wget -q https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh -o magic.sh; sudo ./magic.sh
 ```
 
 ## or
 ### curl
 ```bash
-curl -o magic.sh -sL https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh; sudo magic.sh
+curl -o magic.sh -sL https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh; sudo sh magic.sh
 ```
 
 Now it will ask for some questions just answer them accordingly.
