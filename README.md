@@ -43,7 +43,7 @@ wget -q https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic
 ## or
 ### curl
 ```bash
-curl -O magic.sh https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh; sudo bash ./magic.sh
+curl -O magic.sh - sL https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh; sudo bash ./magic.sh
 ```
 
 Now it will ask for some questions just answer them accordingly.
