@@ -1,6 +1,9 @@
 [license-url]: LICENSE
+[license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
+[![license-image]][license-url]
+
+
 
 
 # MagicDep Adonis
