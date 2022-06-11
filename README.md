@@ -37,7 +37,7 @@ So lets install script, just run any one of this command.
 ### wget
 
 ```bash
-wget -q https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh -o magic.sh; sudo ./magic.sh
+wget -q https://raw.githubusercontent.com/hackerrahul/MagicDep-Adonis/main/Magic.sh -O magic.sh; sudo sh ./magic.sh
 ```
 
 ## or
