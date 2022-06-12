@@ -66,7 +66,7 @@ So to get github access token, you have to navigate to this page
 - Generate Token Now.
 
 So now its a NodeJs application, and NodeJS is just imcomplete without **Environment variables** isn't it?
-So to install the ENV Variables to make sure our project run, we need to Store them in aour project but outside the build directory.
+So to install the ENV Variables to make sure our project run, we need to store them in our project but outside the build directory.
 
 So at the moment, instead of entering env variables just in the command line(that will not work), We have to install it.
 
