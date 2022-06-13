@@ -123,7 +123,7 @@ if [ "$GIT_VERSION" != "command not found" ]; then
 
     fi
 
-    sleep 1
+    
     # check if .env is there or not
     read -p "Oh Wait! Before That, Do you have .env file in your project? (y/n) : " env_exist_flag
     if [ "$env_exist_flag" == "y" ]; then
