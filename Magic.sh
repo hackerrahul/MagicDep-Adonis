@@ -19,8 +19,9 @@ if [ "$GIT_VERSION" != "command not found" ]; then
             curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh
             bash install_nvm.sh
 
-            export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
+            export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
             nvm install --lts
 
         } &> /dev/null
@@ -80,6 +81,10 @@ if [ "$GIT_VERSION" != "command not found" ]; then
 
         read -p "Github Username : " github_username
 
+        echo "Now Lets Generate the Github access token - https://github.com/settings/tokens/new \n"
+
+        sleep 1
+
         read -p "Git Access Key for private Repository : " git_access_key
 
         echo "Cloning ($git_branch_name) branch from ($git_repo_url) Repository"
@@ -91,10 +96,6 @@ if [ "$GIT_VERSION" != "command not found" ]; then
 
         if [ $? -eq 0 ]; then
             echo "Whoa! That was FAST! wasn't it? :) \n"
-
-            sleep 1
-
-            echo "Now Lets Generate the Github access token - https://github.com/settings/tokens/new \n"
 
             sleep 1
 
@@ -123,17 +124,17 @@ if [ "$GIT_VERSION" != "command not found" ]; then
 
     fi
 
-    
+    sleep 1
     # check if .env is there or not
     read -p "Oh Wait! Before That, Do you have .env file in your project? (y/n) : " env_exist_flag
     if [ "$env_exist_flag" == "y" ]; then
         echo "Great, Lets build out the project now.\n"
     else
-        echo "\n Oh! That means I have to create it!, guess what, I cannot not do that at the moment\n"
+        echo "Oh! That means I have to create it!, guess what, I cannot not do that at the moment\n"
         sleep 1
         echo "But no worries, I can download from a url for you. BUT JUST FOR YOU :P \n"
         sleep 1
-        echo "Host your .env file on a hosting (Make sure to add all values) and copy URL\n"
+        echo "Host your .env file on a hosting (Make sure to add all values) and copy URL \n"
         sleep 1
 
         # download .env file and move into the project
@@ -201,6 +202,7 @@ if [ "$GIT_VERSION" != "command not found" ]; then
     echo "Creating Ecosystem file..."
 
     {
+        cd ../
         tee -a ecosystem.config.js > /dev/null <<EOT
 module.exports = {
 apps: [
@@ -239,7 +241,7 @@ EOT
     fi
 
     sleep 1
-    echo "I hope we'll meet again, make sure to star me on github - " #github link
+    echo "I hope we'll meet again, make sure to star me on github - https://github.com/hackerrahul/MagicDep-Adonis" #github link
     sleep 1
     echo "Adios!"
 
