@@ -16,8 +16,8 @@ if [ "$GIT_VERSION" != "command not found" ]; then
     else
         echo "Installing Node with NVM \n"
         {
-            curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh
-            bash install_nvm.sh
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+            #bash install_nvm.sh
 
             export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
